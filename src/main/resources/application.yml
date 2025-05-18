@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8084
 
 spring:
   application:
@@ -17,7 +17,7 @@ spring:
             - Authentication
 
         - id: pedidos-service
-          uri: lb://pedidos
+          uri: lb://order
           predicates:
             - Path=/pedidos/**
           filters:
